@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-anchor: none;
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  flex: 1 1 auto;
+  min-height: 100%;
+}
+
+.app-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.content-container {
+  padding: 15px;
+  min-height: max-content;
+}
+
+i.grey.icon.cart-widget {
+  transition: color 0.3s;
+}
+
+i.grey.icon.cart-widget:hover {
+  color: black !important;
+}
+
+.app-header {
+  .container {
+    .header-nav {
+      margin-top: 15px;
+      padding: 0 14px 0;
+      height: 40px;
+      transition: height 0.25s;
+      .header-menu {
+        height: 100%;
+      }
+    }
+    .fixed-header-nav {
+      position: fixed;
+      width: 100%;
+      max-width: inherit;
+      z-index: 9999;
+      margin-top: 0;
+      height: 48px;
+    }
+  }
+}
+
+.block {
+  height: 500px;
+  width: 500px;
+}
+
+.small-device-logo {
+  display: none !important;
+}
+
+.main-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumbs-wrapper {
+  padding: 15px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.other-staff .recomended-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 600px) {
+  .main-header {
+    padding-top: 10px;
+  }
+  .main-header.fixed-header {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+}
+
+@media screen and (max-width: 320px) {
+  .main-header {
+    margin-top: 10px;
+    padding: 0 8px;
+  }
+
+  .main-header.fixed-header {
+    margin-top: 0px;
+  }
+  .showcase-container {
+    padding: 0;
+  }
+}
+
+.paggiwrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}

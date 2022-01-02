@@ -1,0 +1,13 @@
+.user-info-form-wrap {
+  position: relative;
+  .ui.label {
+    width: 100%;
+  }
+  input[type="date"] {
+    user-select: none !important;
+    cursor: pointer;
+  }
+  input {
+    margin-top: 5px !important;
+  }
+}

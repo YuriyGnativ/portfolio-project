@@ -1,0 +1,22 @@
+.category-header {
+  background-color: rgba(54, 52, 52, 0.13);
+  height: 150px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  & .icon {
+    color: rgba(48, 47, 47, 0.863) !important;
+    margin-right: 15px;
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  & h1 {
+    margin: 0 !important;
+    font-size: 3.5rem !important;
+    color: rgba(48, 47, 47, 0.863) !important;
+  }
+}

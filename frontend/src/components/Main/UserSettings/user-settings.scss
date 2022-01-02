@@ -1,0 +1,109 @@
+.remove-before {
+  &::before {
+    display: none;
+  }
+}
+
+.profile-content-wrap {
+  display: flex;
+}
+
+.ui.bottom.attached.segment.active.tab {
+  border-radius: 0.28571429rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui.list.profile-item-list {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.profile-item-wrapper {
+  padding: 10px !important;
+  border-radius: 5px;
+  min-height: 55px;
+  display: flex !important;
+  align-items: center;
+  border: 1px solid rgba(51, 44, 44, 0.123);
+  &:first-child {
+    margin-bottom: 25px !important;
+    position: relative;
+    &:before {
+      content: "";
+      bottom: -13px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      background-color: rgba(80, 78, 78, 0.24);
+      height: 1px;
+      border-radius: 10px;
+    }
+  }
+  &:first-child,
+  &.active {
+    border: 0;
+    background-color: rgba(89, 107, 106, 0.214);
+  }
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.profile-item-content {
+  flex-grow: 1;
+  background-color: rgba(34, 32, 32, 0.057);
+  border-radius: 15px;
+  min-height: 450px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0.9;
+  background-color: #cfedff;
+  & img {
+    width: 50%;
+  }
+  & span {
+    position: absolute;
+    font-size: 36px;
+    color: rgba(8, 11, 14, 0.7);
+    transform: rotate(352deg);
+    margin-top: 144px;
+  }
+  &.default-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      height: 150px;
+      transform: rotate(15deg);
+    }
+  }
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.label-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 11px;
+  justify-content: center;
+  height: 32px;
+  & > *:first-child {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  & > *:not(:first-child) {
+    color: rgba(0, 0, 0, 0.493);
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,28 @@
+.content-wrapper {
+  display: flex;
+  & .ui.segment {
+    margin: 0;
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+  align-items: flex-start;
+  .filters-sidebar {
+    display: flex;
+    flex-direction: column;
+    .ui.segment {
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  from {
+    font-size: 4em;
+  }
+  to {
+    font-size: 6em;
+  }
+}

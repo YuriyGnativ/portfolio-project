@@ -1,0 +1,15 @@
+.subcomments {
+  margin-left: 30px;
+}
+
+.comments-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 360px;
+  font-family: Montserrat;
+  span {
+    margin-top: 7px;
+  }
+}

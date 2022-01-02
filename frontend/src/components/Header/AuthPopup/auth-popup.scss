@@ -1,0 +1,8 @@
+.auth-popup {
+  // max-width: 200px;
+  .login-btn {
+    &.loading {
+      pointer-events: none !important;
+    }
+  }
+}

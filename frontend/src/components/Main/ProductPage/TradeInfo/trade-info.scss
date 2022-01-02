@@ -1,0 +1,12 @@
+.trade-info-container {
+  margin-left: 15px;
+  .trade-panel {
+    display: flex;
+    align-items: center;
+  }
+
+  .wishlist-widget,
+  div button:last-child {
+    margin-left: 15px;
+  }
+}

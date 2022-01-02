@@ -1,0 +1,17 @@
+.product-grid-container {
+  display: flex;
+  flex-direction: column;
+  .product-grid {
+    margin: -12px -6px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.product-grid-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}

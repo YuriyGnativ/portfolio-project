@@ -1,0 +1,7 @@
+.btn-wishlist {
+  &:hover {
+    i.icon {
+      color: red !important;
+    }
+  }
+}

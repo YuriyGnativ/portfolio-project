@@ -1,0 +1,42 @@
+.user-info-dimmed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 700px;
+  margin-top: 8px;
+  margin-left: 5px;
+  .user-info-dimmed-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-bottom: 25px;
+    min-width: 130px;
+
+    .field-name {
+      color: rgba(99, 94, 94, 0.733);
+      font-size: 0.85rem;
+      margin-bottom: 3px;
+    }
+    .field-value {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: rgba(29, 29, 26, 0.904);
+    }
+  }
+}
+
+.profile-data-fields-group {
+  .ui.segment {
+    margin-right: 18px;
+    .dropdown {
+      margin-top: 5px;
+    }
+  }
+}
+
+.profile-data-footer {
+  button.button.sgn-btn.loading {
+    position: relative !important;
+    pointer-events: none !important;
+  }
+}

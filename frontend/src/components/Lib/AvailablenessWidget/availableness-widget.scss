@@ -1,0 +1,22 @@
+.is-available {
+  user-select: none;
+  max-width: 150px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  & > * {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.is-available-true {
+  color: #0367b9;
+  background-color: rgba(98, 146, 185, 0.123);
+}
+.is-available-false {
+  color: rgb(121, 120, 120);
+  background-color: rgb(245, 245, 245);
+}

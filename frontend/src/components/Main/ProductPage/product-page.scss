@@ -1,0 +1,32 @@
+.product-rating {
+  display: flex;
+  justify-content: space-between;
+  .product-code {
+    color: rgb(80, 71, 77);
+    span {
+      color: rgba(41, 40, 40, 0.445);
+    }
+  }
+}
+
+.product-main-wrapper {
+  display: flex;
+  margin-top: 25px;
+  .trade-info-container,
+  .product-page-tabs-holder {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-main-wrapper {
+    flex-direction: column;
+    .trade-info-container {
+      max-width: 100%;
+      margin: 25px 0 0 0;
+    }
+    .product-page-tabs-holder {
+      max-width: 100%;
+    }
+  }
+}

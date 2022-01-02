@@ -1,0 +1,42 @@
+.profile-data-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+
+  & > *:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > h3 {
+      margin: 0 0 0 5px;
+    }
+  }
+  & > *:last-child {
+    cursor: pointer;
+    transition: 0.3s;
+    & > :first-child {
+      font-size: 16px;
+    }
+    &:hover {
+      color: rgba(9, 64, 136, 0.966);
+    }
+  }
+}
+
+.profile-data-fields-group {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    .input-wrap {
+      margin-top: 15px;
+      margin-right: 18px;
+    }
+  }
+  margin-bottom: 15px;
+}
+
+.form-field {
+  display: flex !important;
+  flex-direction: column;
+}

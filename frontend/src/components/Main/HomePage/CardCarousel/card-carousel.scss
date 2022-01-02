@@ -1,0 +1,42 @@
+.card-carousel-container {
+  position: relative;
+  .card-carousel-header {
+  }
+  .card-carousel-tiles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  button.btn-arrow {
+    position: absolute;
+
+    &.btn-right {
+      top: 55%;
+      right: -8%;
+    }
+    &.btn-left {
+      top: 55%;
+      left: -8%;
+    }
+  }
+}
+
+button.ui.btn-arrow {
+  width: 70px;
+  height: 70px;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  background-color: rgba(10, 9, 9, 0.623) !important;
+  &:hover {
+    background-color: rgba(3, 3, 3, 0.774) !important;
+  }
+  i.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    color: white;
+  }
+}

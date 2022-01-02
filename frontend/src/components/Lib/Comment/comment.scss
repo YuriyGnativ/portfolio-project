@@ -1,0 +1,45 @@
+.comment-wrap {
+  display: flex;
+  .user-pic {
+    border: 1px solid rgba(68, 67, 67, 0.226);
+    border-radius: 17%;
+    max-height: 50px;
+    max-width: 50px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-right: 7px;
+    overflow: hidden;
+    img {
+      max-width: 50px;
+      max-height: 100%;
+    }
+  }
+  .comment-content {
+    width: 100%;
+    .comment-header {
+      display: flex;
+      .username {
+        font-weight: 900;
+      }
+      .comment-rating {
+        display: flex;
+        align-items: center;
+        .comment-likes {
+          cursor: pointer;
+          color: rgba(27, 219, 27, 0.377);
+          &:hover {
+            color: rgba(21, 226, 21, 0.977);
+          }
+        }
+        .comment-dislikes {
+          cursor: pointer;
+          color: rgba(233, 13, 24, 0.616);
+          &:hover {
+            color: rgba(233, 13, 24, 0.916);
+          }
+        }
+      }
+      justify-content: space-between;
+    }
+  }
+}

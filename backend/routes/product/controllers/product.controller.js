@@ -108,7 +108,7 @@ class ProductController {
       },
       order: sort
         ? [["price", sort === "cheap" ? "ASC" : "DESC"]]
-        : [sequelize.fn("RANDOM")],
+        : "cheap",
       offset: page && page > 0 ? page * 8 - 8 : 0,
       limit: 8,
     });

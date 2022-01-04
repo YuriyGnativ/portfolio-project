@@ -10,4 +10,4 @@ To restore data create database with name **ygportfoliodb** and run in terminal:
 ```
 psql -f "abs path to the db_restore file" ygportfoliodb
 ```
-Edit *.env* file in backend dir according to your system settings.
+Edit *.env* file in backend dir according to your own prefferences and system settings.

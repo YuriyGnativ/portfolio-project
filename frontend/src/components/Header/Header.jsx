@@ -59,7 +59,6 @@ export default connect(
                     </Menu.Item>
                     <Menu.Item>
                       <SearchWidget />
-                      {/* <Input icon="search" size="mini" /> */}
                     </Menu.Item>
                   </Menu.Menu>
                   <Menu.Menu position="right">
@@ -115,22 +114,20 @@ export default connect(
               </MediaQuery>
               <MediaQuery maxWidth={600}>
                 <Menu>
-                  <Popup
-                    basic
-                    on="click"
-                    trigger={
-                      <Menu.Item>
-                        <Icon name="bars" />
-                      </Menu.Item>
-                    }
-                    content={
-                      <Menu>
-                        <Menu.Item>
-                          <Input />
-                        </Menu.Item>
-                      </Menu>
-                    }
-                  />
+                  <Menu.Item>
+                    <Link to="/">
+                      <Icon
+                        name="circle"
+                        color={isAuthenticated ? "blue" : "black"}
+                      />
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item style={{
+                    maxHeight: "40px",
+                    flex: 1
+                  }}>
+                    <SearchWidget />
+                  </Menu.Item>
                   <Popup
                     content={
                       !isAuthenticated ? (

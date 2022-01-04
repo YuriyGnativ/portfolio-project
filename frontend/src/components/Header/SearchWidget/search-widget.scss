@@ -1,4 +1,8 @@
 .search-wrap {
+  width: 100%;
+  .ui.left.icon.input {
+    width: 100%;
+  }
   .ui.icon.input input {
     border-radius: 0;
     padding: 5px;

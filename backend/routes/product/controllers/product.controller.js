@@ -93,9 +93,9 @@ class ProductController {
   };
 
   getProductsGrid = async (req, res) => {
-    const { maker, color, minPrice, maxPrice, sort, price, cathegory, page } =
+    const { maker, color, minPrice, maxPrice, sort, price, cathegory } =
       await this.getQueryParams(req, res);
-
+    const { page } = req.query;
     const productData = await Products.findAndCountAll({
       raw: true,
       where: {
@@ -108,7 +108,7 @@ class ProductController {
       },
       order: sort
         ? [["price", sort === "cheap" ? "ASC" : "DESC"]]
-        : "cheap",
+        : [["price", "ASC"]],
       offset: page && page > 0 ? page * 8 - 8 : 0,
       limit: 8,
     });
